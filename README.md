@@ -9,6 +9,28 @@
 [![Validate](https://github.com/alpha-one-index/awesome-ai-index/actions/workflows/validate.yml/badge.svg)](https://github.com/alpha-one-index/awesome-ai-index/actions/workflows/validate.yml)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/alpha-one-index/awesome-ai-index)
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue)](https://www.kaggle.com/datasets/alphaoneindex/ai-vendor-risk-index)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Downloads](https://img.shields.io/github/downloads/alpha-one-index/awesome-ai-index/total)](https://github.com/alpha-one-index/awesome-ai-index/releases)
+```mermaid
+graph LR
+    A["130+ AI Models"] --> B["awesome-ai-index"]
+    C["40+ Vendors"] --> B
+    D["13 Benchmarks"] --> B
+    E["7 Compliance Frameworks"] --> B
+    B --> F["JSON API"]
+    B --> G["Weekly Updates"]
+    B --> H["Risk Scoring"]
+    style B fill:#6366f1,stroke:#4f46e5,color:#fff
+    style A fill:#10b981,stroke:#059669,color:#fff
+    style C fill:#f59e0b,stroke:#d97706,color:#fff
+    style D fill:#ef4444,stroke:#dc2626,color:#fff
+    style E fill:#8b5cf6,stroke:#7c3aed,color:#fff
+    style F fill:#06b6d4,stroke:#0891b2,color:#fff
+    style G fill:#06b6d4,stroke:#0891b2,color:#fff
+    style H fill:#06b6d4,stroke:#0891b2,color:#fff
+```
+
 
 Machine-readable JSON. No paywalls. Updated every Friday via GitHub Actions.
 
@@ -46,6 +68,19 @@ curl https://raw.githubusercontent.com/alpha-one-index/awesome-ai-index/main/dat
 
 # Get benchmarks
 curl https://raw.githubusercontent.com/alpha-one-index/awesome-ai-index/main/data/benchmarks/benchmarks.json
+```
+
+```python
+import requests
+
+# Load all models
+models = requests.get(
+    "https://raw.githubusercontent.com/alpha-one-index/awesome-ai-index/main/data/models/models.json"
+).json()
+
+# Filter open-source models with MMLU > 80
+open_models = [m for m in models if m.get("license") != "Proprietary" and m.get("mmlu", 0) > 80]
+print(f"Found {len(open_models)} open-source models with MMLU > 80")
 ```
 
 ## Dataset Highlights
