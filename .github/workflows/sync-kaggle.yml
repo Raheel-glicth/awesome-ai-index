@@ -22,4 +22,4 @@ jobs:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: |
-          kaggle datasets version -p data/ -m "Automated sync from GitHub" -d
+          kaggle datasets version -p data/ -m "Automated sync from GitHub" --dir-mode zip
