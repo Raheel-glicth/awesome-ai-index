@@ -1,0 +1,34 @@
+name: Add Vendor
+description: Request addition of a new AI vendor
+title: "[Vendor] "
+labels: ["add-vendor", "data"]
+body:
+  - type: input
+    id: vendor-name
+    attributes:
+      label: Vendor Name
+    validations:
+      required: true
+  - type: input
+    id: hq
+    attributes:
+      label: Headquarters (City, Country)
+      placeholder: e.g., San Francisco, US
+    validations:
+      required: true
+  - type: input
+    id: founded
+    attributes:
+      label: Year Founded
+      placeholder: e.g., 2023
+  - type: input
+    id: website
+    attributes:
+      label: Website URL
+    validations:
+      required: true
+  - type: input
+    id: focus
+    attributes:
+      label: Primary Focus
+      placeholder: e.g., Foundation models, AI safety

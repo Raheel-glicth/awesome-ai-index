@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "awesome-ai-index"
+type: dataset
+authors:
+  - name: "Alpha One Index"
+    website: "https://alphaoneindex.com"
+repository-code: "https://github.com/alpha-one-index/awesome-ai-index"
+url: "https://alphaoneindex.com"
+license: CC-BY-SA-4.0
+version: 1.0.0
+date-released: "2026-03-20"
+keywords:
+  - artificial-intelligence
+  - machine-learning
+  - llm
+  - benchmarks
+  - ai-safety
+  - compliance
+  - open-source
+abstract: >-
+  The definitive open-source AI ecosystem database.
+  130+ models, 40+ vendors, benchmarks, compliance
+  and risk data. Machine-readable JSON and CSV with
+  weekly automated updates.

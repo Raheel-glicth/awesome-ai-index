@@ -1,0 +1,30 @@
+# awesome-ai-index
+
+> The definitive open-source AI ecosystem database.
+
+This repository contains structured, machine-readable data about AI models, vendors, benchmarks, and compliance frameworks.
+
+## Datasets
+
+- data/models/models.json: 130+ AI models with benchmark scores, licensing, and risk classifications
+- data/vendors/vendors.json: 40+ AI vendors with HQ, founding year, and focus areas
+- data/benchmarks/benchmarks.json: 12+ benchmarks with methodology and saturation status
+- data/compliance/frameworks.json: 7 regulatory frameworks with jurisdiction and effective dates
+
+## Key Fields Per Model
+
+- id, name, vendor, parameters_b, context_window, release_date
+- benchmarks: mmlu, gpqa_diamond, humaneval, swe_bench_verified, math_500, chatbot_arena
+- license_spdx, model_type (proprietary/open-weight), modality
+- eu_ai_act_risk, ntia_compliant, known_cves
+
+## Links
+
+- Repository: https://github.com/alpha-one-index/awesome-ai-index
+- Website: https://alphaoneindex.com
+- Hugging Face: https://huggingface.co/datasets/alpha-one-index/awesome-ai-index
+- License: CC-BY-SA-4.0
+
+## Update Schedule
+
+Models and vendors update weekly. Benchmarks update monthly. Compliance updates quarterly.
