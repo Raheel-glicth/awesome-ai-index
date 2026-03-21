@@ -1,0 +1,19 @@
+title: awesome-ai-index
+description: The definitive open-source AI ecosystem database
+url: https://alpha-one-index.github.io/awesome-ai-index
+baseurl: /awesome-ai-index
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+author: Alpha One Index
+twitter:
+  card: summary_large_image
+social:
+  name: Alpha One Index
+  links:
+    - https://github.com/alpha-one-index
+    - https://alphaoneindex.com
+google_analytics: 
+logo: /assets/logo.png
