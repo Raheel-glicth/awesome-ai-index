@@ -19,29 +19,9 @@ size_categories:
   - 1K<n<10K
 pretty_name: Awesome AI Index
 ---
-# Awesome AI Index
+# Awesome AI Index [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> The definitive Awesome AI Index — weekly-updated archive of tools, models, papers, courses, code, agents, RAG, fine-tuning, and live event concepts for AI engineers & leaders. Daily fresh entries.
-
-[![Stars](https://img.shields.io/github/stars/alpha-one-index/awesome-ai-index?style=social)](https://github.com/alpha-one-index/awesome-ai-index/stargazers)
-[![License: CC-BY-SA-4.0](https://img.shields.io/badge/License-CC--BY--SA--4.0-lightgrey.svg)](LICENSE)
-[![Weekly Update](https://img.shields.io/badge/updated-weekly-brightgreen)](https://github.com/alpha-one-index/awesome-ai-index/releases)
-[![Data Version](https://img.shields.io/badge/data--version-1.0.0-blue)](https://github.com/alpha-one-index/awesome-ai-index/releases/tag/v1.0.0)
-[![HuggingFace](https://img.shields.io/badge/HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/alpha-one-index/awesome-ai-index)
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue)](https://www.kaggle.com/datasets/alphaoneindex/ai-vendor-risk-index)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Downloads](https://img.shields.io/github/downloads/alpha-one-index/awesome-ai-index/total)](https://github.com/alpha-one-index/awesome-ai-index/releases)
-[![Last Updated](https://img.shields.io/badge/last%20updated-March%202026-blue)](#)
-
-**Download data:** [`ai-index.json`](https://github.com/alpha-one-index/awesome-ai-index/releases/latest/download/ai-index.json) | [`events.csv`](https://github.com/alpha-one-index/awesome-ai-index/releases/latest/download/events.csv)
-
-Machine-readable JSON. No paywalls. Updated every Friday via GitHub Actions.
-
-**Full reports, vendor deep-dives, and premium data:** [alphaoneindex.com](https://alphaoneindex.com) | [AI Vendor Risk Index](https://github.com/alpha-one-index/ai-vendor-risk-index)
-
----
-
+> Curated catalog of AI tools, models, papers, frameworks, and resources for engineers and researchers.
 ## Contents
 
 - [What's Inside](#whats-inside)
@@ -1005,8 +985,7 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 
 ---
 
-## Related Projects
-
+## Footnotes
 | Project | Description |
 |---------|-------------|
 | [![AI Vendor Risk Index](https://img.shields.io/badge/-AI%20Vendor%20Risk%20Index-red)](https://github.com/alpha-one-index/ai-vendor-risk-index) | Security & compliance ratings for 56+ AI vendors |
@@ -1014,13 +993,5 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 | [![alphaoneindex.com](https://img.shields.io/badge/-alphaoneindex.com-6366f1)](https://alphaoneindex.com) | Full reports, premium tier, and API access |
 | [![HuggingFace Mirror](https://img.shields.io/badge/-HuggingFace%20Mirror-yellow)](https://huggingface.co/datasets/alpha-one-index/awesome-ai-index) | Dataset mirror for ML workflows |
 | [![Kaggle Dataset](https://img.shields.io/badge/-Kaggle%20Dataset-20beff)](https://www.kaggle.com/datasets/alphaoneindex/ai-vendor-risk-index) | Dataset mirror on Kaggle |
-
----
-
-## License
-
-[CC-BY-SA-4.0](LICENSE) — Free to use, share, and adapt with attribution.
-
----
 
 Maintained by [Alpha One Index](https://alphaoneindex.com) | Data updated every Friday | Submit corrections via Issues | [Discussions](https://github.com/alpha-one-index/awesome-ai-index/discussions)
