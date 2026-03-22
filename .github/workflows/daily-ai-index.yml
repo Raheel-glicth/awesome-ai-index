@@ -2,8 +2,8 @@ name: Daily AI Index Update
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Every day at 00:00 UTC
-  workflow_dispatch:  # Allow manual triggers
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -13,49 +13,30 @@ jobs:
   update-index:
     runs-on: ubuntu-latest
     name: Fetch and append daily AI index entries
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Set up Python 3.12
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
       - name: Install dependencies
-        run: |
-          pip install requests python-dateutil beautifulsoup4 lxml
-
+        run: pip install requests python-dateutil beautifulsoup4 lxml
       - name: Set current date
         id: date
         run: echo "today=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
-
       - name: Fetch arXiv papers
-        id: arxiv
-        run: |
-          python scripts/fetch_arxiv.py
-
+        run: python scripts/fetch_arxiv.py
       - name: Fetch HuggingFace trending models
-        id: huggingface
-        run: |
-          python scripts/fetch_huggingface.py
-
+        run: python scripts/fetch_huggingface.py
       - name: Fetch LLM leaderboard data
-        id: leaderboard
-        run: |
-          python scripts/fetch_llm_leaderboard.py
-
+        run: python scripts/fetch_llm_leaderboard.py
       - name: Generate ai-index.json artifact
-        run: |
-          python scripts/generate_ai_index_json.py
-
+        run: python scripts/generate_ai_index_json.py
       - name: Generate events.csv artifact
-        run: |
-          python scripts/generate_events_csv.py
-
+        run: python scripts/generate_events_csv.py
       - name: Create Pull Request
         id: create-pr
         uses: peter-evans/create-pull-request@v7
@@ -63,18 +44,16 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: 'Daily AI Index Update — ${{ steps.date.outputs.today }}'
           title: 'Daily AI Index Update — ${{ steps.date.outputs.today }}'
-          body: 'Automated daily update of AI index data including arXiv papers, HuggingFace trending models, LLM leaderboard rankings, ai-index.json, and events.csv.'
+          body: 'Automated daily update including arXiv papers, HuggingFace models, LLM leaderboard.'
           branch: daily-update
           delete-branch: true
           add-paths: |
             data/
             ai-index.json
             events.csv
-
       - name: Auto-merge PR
         if: steps.create-pr.outputs.pull-request-number
-                continue-on-error: true
-        run: |
-          gh pr merge ${{ steps.create-pr.outputs.pull-request-number }} --squash --admin
+        continue-on-error: true
+        run: gh pr merge ${{ steps.create-pr.outputs.pull-request-number }} --squash --admin
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
