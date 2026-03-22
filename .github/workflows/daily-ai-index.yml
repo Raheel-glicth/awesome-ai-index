@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   update-index:
@@ -46,19 +47,16 @@ jobs:
         run: |
           python scripts/generate_events_csv.py
 
-      - name: Check for changes
-        id: check_changes
-        run: |
-                    git add -A && git diff --staged --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
-
-      - name: Commit and push updates
-        if: steps.check_changes.outputs.changes == 'true'
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          DATE=$(date -u +"%Y-%m-%d")
-          git add -A
-          git commit -m "Daily AI Index Update - ${DATE}"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Daily AI Index Update - $(date -u +'%Y-%m-%d')"
+          title: "Daily AI Index Update - $(date -u +'%Y-%m-%d')"
+          body: "Automated daily update of AI index data including arXiv papers, HuggingFace trending models, ai-index.json, and events.csv."
+          branch: daily-update
+          delete-branch: true
+          add-paths: |
+            data/
+            ai-index.json
+            events.csv
