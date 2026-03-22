@@ -994,4 +994,9 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 | [![HuggingFace Mirror](https://img.shields.io/badge/-HuggingFace%20Mirror-yellow)](https://huggingface.co/datasets/alpha-one-index/awesome-ai-index) | Dataset mirror for ML workflows |
 | [![Kaggle Dataset](https://img.shields.io/badge/-Kaggle%20Dataset-20beff)](https://www.kaggle.com/datasets/alphaoneindex/ai-vendor-risk-index) | Dataset mirror on Kaggle |
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=alpha-one-index/awesome-ai-index&type=Date)](https://star-history.com/#alpha-one-index/awesome-ai-index&Date)
+
+
 Maintained by [Alpha One Index](https://alphaoneindex.com) | Data updated every Friday | Submit corrections via Issues | [Discussions](https://github.com/alpha-one-index/awesome-ai-index/discussions)
