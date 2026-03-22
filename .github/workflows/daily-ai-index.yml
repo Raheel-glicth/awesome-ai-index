@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   update-index:
@@ -17,43 +16,43 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PAT }}
+
       - name: Set up Python 3.12
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
       - name: Install dependencies
         run: pip install requests python-dateutil beautifulsoup4 lxml
+
       - name: Set current date
         id: date
         run: echo "today=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
       - name: Fetch arXiv papers
         run: python scripts/fetch_arxiv.py
+
       - name: Fetch HuggingFace trending models
         run: python scripts/fetch_huggingface.py
+
       - name: Fetch LLM leaderboard data
         run: python scripts/fetch_llm_leaderboard.py
+
       - name: Generate ai-index.json artifact
         run: python scripts/generate_ai_index_json.py
+
       - name: Generate events.csv artifact
         run: python scripts/generate_events_csv.py
-      - name: Create Pull Request
-        id: create-pr
-        uses: peter-evans/create-pull-request@v7
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'Daily AI Index Update — ${{ steps.date.outputs.today }}'
-          title: 'Daily AI Index Update — ${{ steps.date.outputs.today }}'
-          body: 'Automated daily update including arXiv papers, HuggingFace models, LLM leaderboard.'
-          branch: daily-update
-          delete-branch: true
-          add-paths: |
-            data/
-            ai-index.json
-            events.csv
-      - name: Auto-merge PR
-        if: steps.create-pr.outputs.pull-request-number
-        continue-on-error: true
-        run: gh pr merge ${{ steps.create-pr.outputs.pull-request-number }} --squash --admin
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push directly to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Daily AI Index Update — ${{ steps.date.outputs.today }}"
+            git push origin main
+          fi
