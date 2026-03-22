@@ -1,0 +1,17 @@
+{
+  "fetched_at": "2026-03-22T06:11:09.909285+00:00",
+  "arena_ai_count": 20,
+  "open_llm_leaderboard_count": 0,
+  "top_models": [
+    "claude-opus-4-6-thinking",
+    "claude-opus-4-6",
+    "gemini-3.1-pro-preview",
+    "grok-4.20-beta1",
+    "gemini-3-pro",
+    "gpt-5.4-high",
+    "gpt-5.2-chat-latest-20260210",
+    "grok-4.20-beta-0309-reasoning",
+    "gemini-3-flash",
+    "claude-opus-4-5-20251101-thinking-32k"
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "fetched_at": "2026-03-22T06:11:09.909285+00:00",
+  "sources": [
+    "arena-ai"
+  ],
+  "total_entries": 20,
+  "entries": [
+    {
+      "model": "claude-opus-4-6-thinking",
+      "vendor": "Anthropic",
+      "elo_score": 1502,
+      "rank": 1,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "claude-opus-4-6",
+      "vendor": "Anthropic",
+      "elo_score": 1501,
+      "rank": 2,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "gemini-3.1-pro-preview",
+      "vendor": "Google",
+      "elo_score": 1493,
+      "rank": 3,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "grok-4.20-beta1",
+      "vendor": "xAI",
+      "elo_score": 1492,
+      "rank": 4,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "gemini-3-pro",
+      "vendor": "Google",
+      "elo_score": 1486,
+      "rank": 5,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "gpt-5.4-high",
+      "vendor": "OpenAI",
+      "elo_score": 1485,
+      "rank": 6,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "gpt-5.2-chat-latest-20260210",
+      "vendor": "OpenAI",
+      "elo_score": 1482,
+      "rank": 7,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "grok-4.20-beta-0309-reasoning",
+      "vendor": "xAI",
+      "elo_score": 1481,
+      "rank": 8,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "gemini-3-flash",
+      "vendor": "Google",
+      "elo_score": 1475,
+      "rank": 9,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "claude-opus-4-5-20251101-thinking-32k",
+      "vendor": "Anthropic",
+      "elo_score": 1474,
+      "rank": 10,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "grok-4.1-thinking",
+      "vendor": "xAI",
+      "elo_score": 1472,
+      "rank": 11,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "claude-opus-4-5-20251101",
+      "vendor": "Anthropic",
+      "elo_score": 1469,
+      "rank": 12,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "vendor": "Anthropic",
+      "elo_score": 1465,
+      "rank": 13,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "qwen3.5-max-preview",
+      "vendor": "Alibaba",
+      "elo_score": 1464,
+      "rank": 14,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "gpt-5.3-chat-latest",
+      "vendor": "OpenAI",
+      "elo_score": 1464,
+      "rank": 15,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "gemini-3-flash (thinking-minimal)",
+      "vendor": "Google",
+      "elo_score": 1463,
+      "rank": 16,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "gpt-5.4",
+      "vendor": "OpenAI",
+      "elo_score": 1463,
+      "rank": 17,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "dola-seed-2.0-preview",
+      "vendor": "Bytedance",
+      "elo_score": 1462,
+      "rank": 18,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "grok-4.1",
+      "vendor": "xAI",
+      "elo_score": 1461,
+      "rank": 19,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    },
+    {
+      "model": "gpt-5.1-high",
+      "vendor": "OpenAI",
+      "elo_score": 1455,
+      "rank": 20,
+      "source": "arena-ai",
+      "url": "https://arena.ai/"
+    }
+  ]
+}
