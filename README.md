@@ -19,7 +19,7 @@ size_categories:
   - 1K<n<10K
 pretty_name: Awesome AI Index
 ---
-# awesome-ai-index
+# Awesome AI Index
 
 > The definitive Awesome AI Index — weekly-updated archive of tools, models, papers, courses, code, agents, RAG, fine-tuning, and live event concepts for AI engineers & leaders. Daily fresh entries.
 
@@ -27,7 +27,6 @@ pretty_name: Awesome AI Index
 [![License: CC-BY-SA-4.0](https://img.shields.io/badge/License-CC--BY--SA--4.0-lightgrey.svg)](LICENSE)
 [![Weekly Update](https://img.shields.io/badge/updated-weekly-brightgreen)](https://github.com/alpha-one-index/awesome-ai-index/releases)
 [![Data Version](https://img.shields.io/badge/data--version-1.0.0-blue)](https://github.com/alpha-one-index/awesome-ai-index/releases/tag/v1.0.0)
-[![Validate](https://github.com/alpha-one-index/awesome-ai-index/actions/workflows/validate.yml/badge.svg)](https://github.com/alpha-one-index/awesome-ai-index/actions/workflows/validate.yml)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/alpha-one-index/awesome-ai-index)
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue)](https://www.kaggle.com/datasets/alphaoneindex/ai-vendor-risk-index)
@@ -43,7 +42,7 @@ Machine-readable JSON. No paywalls. Updated every Friday via GitHub Actions.
 
 ---
 
-## Table of Contents
+## Contents
 
 - [What's Inside](#whats-inside)
 - [Why This Exists](#why-this-exists)
