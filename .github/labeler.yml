@@ -31,3 +31,17 @@ documentation:
 scripts:
   - changed-files:
     - any-glob-to-any-file: 'scripts/**'
+
+bot:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'data/**'
+      - 'ai-index.json'
+      - 'events.csv'
+
+auto-merge:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'data/**'
+      - 'ai-index.json'
+      - 'events.csv'
