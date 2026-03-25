@@ -684,6 +684,8 @@ print(f"Found {len(open_models)} open-source models with MMLU > 80")
 | [Microsoft AI for Beginners](https://github.com/microsoft/AI-For-Beginners) | Microsoft | AI fundamentals | GitHub |
 | [LLM Bootcamp](https://fullstackdeeplearning.com/llm-bootcamp/) | Full Stack DL | Building LLM apps | Video |
 | [Prompt Engineering Course](https://github.com/dair-ai/Prompt-Engineering-Guide) | DAIR.AI | Prompt engineering | Guide |
+| [Full Stack Deep Learning](https://fullstackdeeplearning.com/course/2022/) | FSDL | LLMs, deployment, ML systems | Video |
+| [OpenAI Cookbook](https://github.com/openai/openai-cookbook) | OpenAI | LLMs, API usage, prompt engineering | GitHub |
 
 </details>
 
